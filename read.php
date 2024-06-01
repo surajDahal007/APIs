@@ -44,7 +44,7 @@
                     'message' => $requestMethod .' API DATA FETCHED',
                     'data' => $response
                 ];
-
+                
                 header("HTTP/1.0 200 OK");
                 return json_encode($data);
             }
@@ -53,7 +53,6 @@
                     'status' => 404,
                     'message' => $requestMethod .' No record found'
                 ];
-                
                 header("HTTP/1.0 404 No record found");
                 return json_encode($data);
             }
