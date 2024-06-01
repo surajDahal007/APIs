@@ -5,7 +5,7 @@
     if (!$conn) {
         die('Unable to connect to database due to ---> '. mysqli_connect_error());
     }
-    
+
 
     $response = array();
     $sql = "SELECT * FROM `api_data`";
@@ -13,6 +13,7 @@
 
     // to display json in readable format
     header("Content-Type: JSON");
+    
     $i=0;
     while ($row = mysqli_fetch_assoc($result)) {
         $response[$i]['id'] = $row['id']; 
