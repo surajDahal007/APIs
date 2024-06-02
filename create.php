@@ -86,5 +86,4 @@
         header("HTTP/1.0 422 Unable to process given entity");
         echo json_encode($data);
     }
-
 ?>
