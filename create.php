@@ -37,9 +37,7 @@
         echo json_encode($data);
     }
 
-
-    function storeData($dataInput)
-    {
+    function storeData($dataInput){
         global $conn;
 
         $name = mysqli_real_escape_string($conn, $dataInput['name']);
